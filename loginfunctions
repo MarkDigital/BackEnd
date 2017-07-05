@@ -1,16 +1,23 @@
 /**
- * 
  *Class for logging in
  */
 
 public class loginfunctions {
 
+  ArrayList<String> leadsList = new ArrayList<String>();
+  /** 
+  *
+  */
+  public void loginfunctions(){
+  }
+  
   /** 
   *This Method Gets the Appointments stored in CSV file.
   *User Login determines which appointments are pulled.
   */
-  public void loginfunctions(){
-  
+  public void doLogin(){
+    //Get user's entered information
+    leadsList = sortAppointments.getAppointments(userName);
   }
   
 }
