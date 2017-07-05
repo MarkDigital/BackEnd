@@ -1,1 +1,16 @@
+/**
+ * 
+ *Class for logging in
+ */
 
+public class loginfunctions {
+
+  /** 
+  *This Method Gets the Appointments stored in CSV file.
+  *User Login determines which appointments are pulled.
+  */
+  public void loginfunctions(){
+  
+  }
+  
+}
