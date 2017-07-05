@@ -15,7 +15,7 @@ public class sortAppointments {
   */
   public void sortAppointments (String userName) {
     
-    getPermissions(userName);
+    permissions = getPermissions(userName);
     
     if(permissions.get(1) == "ADMIN"){
     //PULL ALL APPOINTMENTS
@@ -27,8 +27,10 @@ public class sortAppointments {
   /** 
   *This method pulls permissions from the employee database (Probably CSV)
   */
-  public void getPermissions (String userName){
+  public ArrayList<String> getPermissions (String userName){
     //Get Permissions based on userName.
+    
+    //return permission array
   }
   
   /** 
