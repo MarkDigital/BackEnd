@@ -1,4 +1,9 @@
-public class getAppointments {
+/**
+ * 
+ *Class for retrieving appointment details from the database.
+ */
+
+public class sortAppointments {
   
   ArrayList<String> permissions = new ArrayList<String>();
   ArrayList<String> appointments = new ArrayList<String>();
@@ -8,7 +13,7 @@ public class getAppointments {
   *This Method Gets the Appointments stored in CSV file.
   *User Login determines which appointments are pulled.
   */
-  public void getAppointments (String userName) {
+  public void sortAppointments (String userName) {
     
     getPermissions(userName);
     
@@ -24,5 +29,12 @@ public class getAppointments {
   */
   public void getPermissions (String userName){
     //Get Permissions based on userName.
+  }
+  
+  /** 
+  *Returns appointments to caller.
+  */
+  public  ArrayList<String> getAppointments (){
+    return appointments;
   }
 }
